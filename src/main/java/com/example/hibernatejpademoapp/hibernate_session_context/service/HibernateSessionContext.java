@@ -1,5 +1,6 @@
 package com.example.hibernatejpademoapp.hibernate_session_context.service;
 
+import com.example.hibernatejpademoapp.hibernate_session_context.LaunchServiceTask;
 import com.example.hibernatejpademoapp.hibernate_session_context.domain.Person;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.EntityManagerFactory;
@@ -11,7 +12,7 @@ import java.util.function.Function;
 
 @Service
 @RequiredArgsConstructor
-public class HibernateSessionContext {
+public class HibernateSessionContext implements LaunchServiceTask {
 
     private final EntityManagerFactory entityManagerFactory;
 
