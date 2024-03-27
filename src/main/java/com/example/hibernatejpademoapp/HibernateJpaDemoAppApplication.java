@@ -22,7 +22,6 @@ public class HibernateJpaDemoAppApplication implements ApplicationContextAware {
         SpringApplication.run(HibernateJpaDemoAppApplication.class, args);
 
         final LaunchService launchService = applicationContext.getBean(LaunchService.class);
-
         launchService.launch();
 
     }
